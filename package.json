@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env npm run test:integration",
+    "test:integration": "cross-env node_modules/mocha/bin/mocha --recursive ./test/__integration/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.712.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "mocha": "^8.0.1"
+  }
+}
